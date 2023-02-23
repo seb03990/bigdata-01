@@ -35,3 +35,8 @@ jobs:
         run : |
               ls
               pwd
+      - name: Install virtualenv and execute pytest
+        run: |
+          pip install virtual env
+          virtual env
+          source en/bin/activate
